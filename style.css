@@ -499,6 +499,10 @@ p.description {
     opacity: 0.5;
 }
 
+.count-block label[for="quantity-input"] {
+    display: none;
+}
+
 .count-block input::-webkit-outer-spin-button,
 .count-block input::-webkit-inner-spin-button {
     -webkit-appearance: none;
