@@ -27,7 +27,7 @@ const increaseBtn = document.getElementById('increase-btn');
 const quantityInput = document.getElementById('quantity-input');
 
 decreaseBtn.addEventListener('click', () => {
-    let currentValue = parseInt(quantityInput.value);
+    const currentValue = parseInt(quantityInput.value);
     if (currentValue >= 1) {
         quantityInput.value = currentValue - 1;
     }
