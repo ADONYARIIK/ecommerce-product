@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="block">
+      <div class="burger">
+        <img src="images/icon-menu.svg" alt="Menu icon">
+      </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Sneaker Company logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="block">
+      <div class="cart">
+        <img src="images/icon-cart.svg" alt="Cart icon">
+        <div class="cart-count"></div>
+      </div>
+      <div class="avatar">
+        <img src="images/image-avatar.png" alt="User avatar">
+      </div>
+    </div>
+  </header>
+
+  <aside>
+    <img src="images/icon-close.svg" alt="Close menu icon" class="close-menu">
+    <nav>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="final-cart">
+    <h3>Cart</h3>
+    <div class="line"></div>
+    <div class="content">
+      <h2>Your cart is empty.</h2>
+    </div>
+  </div>
+
+  <main>
+    <section class="product-images">
+      <img id="selected-image" src="images/image-product-1.jpg" alt="Sneaker image">
+
+      <div class="arrow-left arrow"><span class="arrow-icon"></span></div>
+      <div class="arrow-right arrow"><span class="arrow-icon"></span></div>
+
+      <section class="thumbnails">
+        <div class="image-container selected"></div>
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+      </section>
+    </section>
+
+    <section class="content">
+      <h3 class="company">Sneaker Company</h3>
+
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+
+      <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="price-block">
+        <h2 class="current-price">$125.00</h2>
+        <span class="discount">50%</span>
+        <h4 class="original-price">$250.00</h4>
+      </div>
+
+      <div class="add-to-cart-block">
+        <div class="count-block">
+          <button id="decrease-btn"><img src="images/icon-minus.svg" alt="Decrease quantity"></button>
+          <input type="number" id="quantity-input" min="0" value="0">
+          <button id="increase-btn"><img src="images/icon-plus.svg" alt="Increase quantity"></button>
+        </div>
+        <button class="add-to-cart"><span class="cart-icon"></span>Add to cart</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-overlay">
+    <div class="close-overlay"><span class="close-icon"></span></div>
+    <img src="images/image-product-1.jpg" alt="Sneaker image" class="main-image">
+
+    <div class="arrow-left arrow"><span class="arrow-icon"></span></div>
+    <div class="arrow-right arrow"><span class="arrow-icon"></span></div>
+
+    <section class="thumbnails-overlay">
+      <div class="image-container selected"></div>
+      <div class="image-container"></div>
+      <div class="image-container"></div>
+      <div class="image-container"></div>
+    </section>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Yaroslav Tyrchenko</a>.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
