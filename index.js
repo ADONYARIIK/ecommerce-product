@@ -6,7 +6,7 @@ const thumbnailsContainer = document.querySelector('.thumbnails');
 const thumbnailImages = thumbnailsContainer.getElementsByClassName('image-container');
 
 for (let i = 0; i < thumbnailImages.length; i++) {
-    thumbnailImages[i].style.setProperty('--bg-img', `url('images/image-product-${i + 1}-thumbnail.jpg')`);
+    thumbnailImages[i].style.backgroundImage = `url('images/image-product-${i + 1}-thumbnail.jpg')`;
 }
 
 thumbnailsContainer.addEventListener('click', (event) => {
@@ -106,7 +106,7 @@ const thumbnailsContainerOverlay = document.querySelector('.thumbnails-overlay')
 const thumbnailImagesOverlay = thumbnailsContainerOverlay.getElementsByClassName('image-container');
 
 for (let i = 0; i < thumbnailImagesOverlay.length; i++) {
-    thumbnailImagesOverlay[i].style.setProperty('--bg-img', `url('images/image-product-${i + 1}-thumbnail.jpg')`);
+    thumbnailImagesOverlay[i].style.backgroundImage = `url('images/image-product-${i + 1}-thumbnail.jpg')`;
 }
 
 const overlayPrevBtn = document.querySelector('.image-overlay>.arrow-left');
