@@ -34,7 +34,7 @@ decreaseBtn.addEventListener('click', () => {
 });
 
 increaseBtn.addEventListener('click', () => {
-    let currentValue = parseInt(quantityInput.value);
+    const currentValue = parseInt(quantityInput.value);
     quantityInput.value = currentValue + 1;
 });
 
